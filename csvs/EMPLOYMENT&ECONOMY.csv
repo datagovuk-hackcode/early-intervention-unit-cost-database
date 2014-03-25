@@ -1,0 +1,113 @@
+EMPLOYMENT & ECONOMY,BENEFITS,E&E1.0,"Job Seeker's Allowance
+Fiscal benefit from a workless claimant entering work",Multiple,DWP,Per claimant per year,9800,2012/13," £10,025 ","The Department for Work and Pensions Social Cost-Benefit Analysis framework (Working Paper 86) / response to parliamentary questions (HC Deb 6 February 2013, vol 558, col 352W)",G,"This is the fiscal benefit from a Job Seekers' Allowance claimant entering work.  As shown in the constituent cost lines below, it comprises savings in benefits payments accruing to the Department for Work and Pensions' Annually Managed Expenditure / HM Treasury), and savings to the NHS related to a reduction in health care costs associated with being ou of work.  Note that the monetisation figures  are based on entry to employment for a 12 month continuous period.  Not all individuals entering employment will stay in a job indefinitely, and therefore an assessment of the length of employment should be included when calculating the impact of an intervention.  There is an additional economic impact of entering employment, related to increased earnings - this is monetised as £4,335 per annum (2012/13 prices).",https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/214384/WP86.pdf
+EMPLOYMENT & ECONOMY,BENEFITS,E&E1.0.1,"Job Seekers' Allowance
+Fiscal benefit from a workless claimant entering work - benefits payments",DWP,HM Treasury,Per claimant per year,9234,2012/13," £9,446 ","The Department for Work and Pensions Social Cost-Benefit Analysis framework (Working Paper 86) / response to parliamentary questions (HC Deb 6 February 2013, vol 558, col 352W)",G,See note to headline cost above,https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/214384/WP86.pdf
+EMPLOYMENT & ECONOMY,BENEFITS,E&E1.0.2,"Job Seekers' Allowance
+Fiscal benefit from a workless claimant entering work - improved health",NHS,,Per claimant per year,566,2012/13, £579 ,"The Department for Work and Pensions Social Cost-Benefit Analysis framework (Working Paper 86) / response to parliamentary questions (HC Deb 6 February 2013, vol 558, col 352W)",G,See note to headline cost above,https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/214384/WP86.pdf
+EMPLOYMENT & ECONOMY,BENEFITS,E&E1.1,"Job Seeker's Allowance
+Income based Jobseekers Allowance - couple both 16-17",DWP,JCP,Per week,56.25,2012/13, £58 ,Department for Work and Pensions Benefit & Pension Rates 2012 (DirectGov August 2012),G,,
+EMPLOYMENT & ECONOMY,BENEFITS,E&E1.2,"Job Seeker's Allowance
+Income based Jobseekers Allowance - couple both 16-17 (Higher rate)",DWP,JCP,Per week,84.95,2012/13, £87 ,Department for Work and Pensions Benefit & Pension Rates 2012 (DirectGov August 2012),G,,
+EMPLOYMENT & ECONOMY,BENEFITS,E&E1.3,"Job Seeker's Allowance
+Income based Jobseekers Allowance - couple one 16-17 one 18-24",DWP,JCP,Per week,56.25,2012/13, £58 ,Department for Work and Pensions Benefit & Pension Rates 2012 (DirectGov August 2012),G,,
+EMPLOYMENT & ECONOMY,BENEFITS,E&E1.4,"Job Seeker's Allowance
+Income based Jobseekers Allowance - couple one 16-17 one 25 or over",DWP,JCP,Per week,71,2012/13, £73 ,Department for Work and Pensions Benefit & Pension Rates 2012 (DirectGov August 2012),G,,
+EMPLOYMENT & ECONOMY,BENEFITS,E&E1.5,"Job Seeker's Allowance
+Income based Jobseekers Allowance - couple both 18 or over",DWP,JCP,Per week,111.45,2012/13, £114 ,Department for Work and Pensions Benefit & Pension Rates 2012 (DirectGov August 2012),G,,
+EMPLOYMENT & ECONOMY,BENEFITS,E&E1.6,"Job Seeker's Allowance
+Income based allowance - single 16-24",DWP,JCP,Per week,56.25,2011/12, £58 ,Department for Work and Pensions Benefit & Pension Rates 2012 (DirectGov August 2012),G,,
+EMPLOYMENT & ECONOMY,BENEFITS,E&E1.7,"Job Seeker's Allowance
+Income based allowance - single 25 or over",DWP,JCP,Per week,71,2011/12, £74 ,Department for Work and Pensions Benefit & Pension Rates 2012 (DirectGov August 2012),G,,
+EMPLOYMENT & ECONOMY,BENEFITS,E&E1.8,"Job Seeker's Allowance
+Cost of processing each new claim for JSA",DWP,JCP,Per claim,114,2009/10, £124 ,"DWP Annual Report and Accounts 2010-11, p10",A,"Provisional (lower) costs for 2010-11 also available.  Includes administrative expenditure on pay and staff pension costs, current expenditure on goods and services, and capital depreciation.  Excludes one-off expenditure (cost of investment and other one-off charges).  Direct and apportioned indirect costs are included, such as staff, IT, estates, management and corporate support costs",
+EMPLOYMENT & ECONOMY,BENEFITS,E&E1.9,"Job Seeker's Allowance
+Interview costs per session (e.g. new claim, 13 week, 6 month interviews)",DWP,JCP,Per customer,70,2009/10, £76 ,"DWP Annual Report and Accounts 2010-11, p10",A,"Provisional (lower) costs for 2010-11 also available.  Includes administrative expenditure on pay and staff pension costs, current expenditure on goods and services, and capital depreciation.  Excludes one-off expenditure (cost of investment and other one-off charges).  Direct and apportioned indirect costs are included, such as staff, IT, estates, management and corporate support costs",
+EMPLOYMENT & ECONOMY,BENEFITS,E&E1.10,"Job Seeker's Allowance
+Cost of maintaining each existing claim for JSA per annum",DWP,JCP,Per claimant per year,307,2009/10, £335 ,"DWP Annual Report and Accounts 2010-11, p10",A,"Provisional (lower) costs for 2010-11 also available.  Includes administrative expenditure on pay and staff pension costs, current expenditure on goods and services, and capital depreciation.  Excludes one-off expenditure (cost of investment and other one-off charges).  Direct and apportioned indirect costs are included, such as staff, IT, estates, management and corporate support costs",
+EMPLOYMENT & ECONOMY,BENEFITS,E&E2.0,"Employment and Support Allowance / Incapacity Benefit
+Fiscal benefit from a workless claimant entering work",Multiple,DWP,Per claimant per year,8632,2012/13," £8,831 ",The Department for Work and Pensions Social Cost-Benefit Analysis framework (Working Paper 86) / unpublished DWP modelling,G,"This is the fiscal benefit from an Employment and Support Allowance / Incapacity Benefit claimant entering work.  As shown in the constituent cost lines below, it comprises savings in benefits payments accruing to the Department for Work and Pensions' Annually Managed Expenditure / HM Treasury), and savings to the NHS related to a reduction in health care costs associated with being ou of work.  Note that the monetisation figures  are based on entry to employment for a 12 month continuous period.  Not all individuals entering employment will stay in a job indefinitely, and therefore an assessment of the length of employment should be included when calculating the impact of an intervention.  There is an additional economic impact of entering employment, related to increased earnings - this is monetised as £4,593 per annum (2012/13 prices).",https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/214384/WP86.pdf
+EMPLOYMENT & ECONOMY,BENEFITS,E&E2.0.1,"Employment and Support Allowance
+Fiscal benefit from a workless claimant entering work - benefits payments",DWP,HM Treasury,Per claimant per year,7500,2012/13," £7,673 ",The Department for Work and Pensions Social Cost-Benefit Analysis framework (Working Paper 86) / unpublished DWP modelling,G,See note to headline cost above,https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/214384/WP86.pdf
+EMPLOYMENT & ECONOMY,BENEFITS,E&E2.0.2,"Employment and Support Allowance
+Fiscal benefit from a workless claimant entering work - improved health",NHS,,Per claimant per year,1132,2012/13," £1,158 ",The Department for Work and Pensions Social Cost-Benefit Analysis framework (Working Paper 86) / unpublished DWP modelling,G,See note to headline cost above,https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/214384/WP86.pdf
+EMPLOYMENT & ECONOMY,BENEFITS,E&E2.1,"Employment and Support Allowance 
+Single - under 25 (or lone parent under 18)",DWP,JCP,Per week,56.25,2012/13, £58 ,Department for Work and Pensions Benefit & Pension Rates 2012 (DirectGov August 2012),G,,
+EMPLOYMENT & ECONOMY,BENEFITS,E&E2.2,"Employment and Support Allowance
+Single - 25 or over (or lone parent 18 or over)",DWP,JCP,Per week,71,2012/13, £73 ,Department for Work and Pensions Benefit & Pension Rates 2012 (DirectGov August 2012),G,,
+EMPLOYMENT & ECONOMY,BENEFITS,E&E2.3,"Employment and Support Allowance
+Couple - both under 18",DWP,JCP,Per week,56.25,2012/13, £58 ,Department for Work and Pensions Benefit & Pension Rates 2012 (DirectGov August 2012),G,,
+EMPLOYMENT & ECONOMY,BENEFITS,E&E2.4,"Employment and Support Allowance
+Couple - both under 18 with child",DWP,JCP,Per week,84.95,2012/13, £87 ,Department for Work and Pensions Benefit & Pension Rates 2012 (DirectGov August 2012),G,,
+EMPLOYMENT & ECONOMY,BENEFITS,E&E2.5,"Employment and Support Allowance
+Couple - both under 18 (main phase)",DWP,JCP,Per week,71,2012/13, £73 ,Department for Work and Pensions Benefit & Pension Rates 2012 (DirectGov August 2012),G,,
+EMPLOYMENT & ECONOMY,BENEFITS,E&E2.6,"Employment and Support Allowance
+Couple - both under 18 with child (main phase)",DWP,JCP,Per week,111.45,2012/13, £114 ,Department for Work and Pensions Benefit & Pension Rates 2012 (DirectGov August 2012),G,,
+EMPLOYMENT & ECONOMY,BENEFITS,E&E2.7,"Employment and Support Allowance
+Couple - one under 18, one 18 or over (certain conditions apply)",DWP,JCP,Per week,111.45,2012/13, £114 ,Department for Work and Pensions Benefit & Pension Rates 2012 (DirectGov August 2012),G,,
+EMPLOYMENT & ECONOMY,BENEFITS,E&E2.8,"Employment and Support Allowance
+Couple - both 18 or over",DWP,JCP,Per week,111.45,2012/13, £114 ,Department for Work and Pensions Benefit & Pension Rates 2012 (DirectGov August 2012),G,,
+EMPLOYMENT & ECONOMY,BENEFITS,E&E2.9,"Employment and Support Allowance
+Couple - claimant under 25, partner under 18",DWP,JCP,Per week,56.25,2012/13, £58 ,Department for Work and Pensions Benefit & Pension Rates 2012 (DirectGov August 2012),G,,
+EMPLOYMENT & ECONOMY,BENEFITS,E&E2.10,"Employment and Support Allowance
+Couple - claimant 25 or over, partner under 18",DWP,JCP,Per week,71,2012/13, £73 ,Department for Work and Pensions Benefit & Pension Rates 2012 (DirectGov August 2012),G,,
+EMPLOYMENT & ECONOMY,BENEFITS,E&E2.11,"Employment and Support Allowance
+Couple - claimant (main phase), partner under 18",DWP,JCP,Per week,71,2012/13, £73 ,Department for Work and Pensions Benefit & Pension Rates 2012 (DirectGov August 2012),G,,
+EMPLOYMENT & ECONOMY,BENEFITS,E&E2.12,"Employment and Support Allowance
+Cost of processing each new claim for ESA",DWP,JCP,Per claim,311,2009/10, £339 ,"DWP Annual Report and Accounts 2010-11, p10",A,"Provisional (lower) costs for 2010-11 also available.  Includes administrative expenditure on pay and staff pension costs, current expenditure on goods and services, and capital depreciation.  Excludes one-off expenditure (cost of investment and other one-off charges).  Direct and apportioned indirect costs are included, such as staff, IT, estates, management and corporate support costs",
+EMPLOYMENT & ECONOMY,BENEFITS,E&E2.13,"Incapacity Benefit (HISTORIC)
+First order fiscal benefit from a workless claimant entering work",DWP,JCP,Per claimant,8160,2010/11," £8,667 ",(DWP 2011) Co-Design Interim Report (Annex A) p29,G,"DWP note: whilst the data are based upon getting the claimant into work for an entire year, internal analysis shows that at the national level around 75% of IB claimants stay off benefit for twelve months or more.  Data take into account the effect of in-work tax credits (which off-set some of the benefit savings), and represent the 'average' claimant, not those in disadvantaged groups such as ethnic minorities and older people (the cost of getting some groups into employment is likely to be greater than the average cost).",http://www.dwp.gov.uk/publications/policy-publications/worklessness-codesign.shtml
+EMPLOYMENT & ECONOMY,BENEFITS,E&E2.14,"Incapacity Benefit (HISTORIC)
+Under state pension age short term higher rate",DWP,JCP,Per week,85.15,2011/12, £88 ,Department for Work and Pensions Benefit & Pension Rates 11/12 (sourced from DirectGov),G,,
+EMPLOYMENT & ECONOMY,BENEFITS,E&E2.15,"Incapacity Benefit (HISTORIC)
+Under state pension age short term lower rate",DWP,JCP,Per week,71.1,2011/12, £74 ,Department for Work and Pensions Benefit & Pension Rates 11/12 (sourced from DirectGov),G,,
+EMPLOYMENT & ECONOMY,BENEFITS,E&E2.16,"Incapacity Benefit (HISTORIC)
+Interview costs per session",DWP,JCP,Per customer,109,2009/10, £119 ,"DWP Annual Report and Accounts 2010-11, p10",A,"Provisional (lower) costs for 2010-11 also available.  Includes administrative expenditure on pay and staff pension costs, current expenditure on goods and services, and capital depreciation.  Excludes one-off expenditure (cost of investment and other one-off charges).  Direct and apportioned indirect costs are included, such as staff, IT, estates, management and corporate support costs",
+EMPLOYMENT & ECONOMY,BENEFITS,E&E3.0,"Lone Parent Income Support
+Fiscal benefit from a workless claimant entering work",Multiple,DWP,Per claimant per year,7570,2012/13," £7,744 ","Worklessness Co-Design - Interim Report, Annex A (DWP, 2011)",G,"This is the fiscal benefit from a Lone Parent Income Support claimant entering work.  As shown in the constituent cost lines below, it comprises savings in benefits payments accruing to the Department for Work and Pensions' Annually Managed Expenditure / HM Treasury), and savings to the NHS related to a reduction in health care costs associated with being ou of work.  Note that the monetisation figures  are based on entry to employment for a 12 month continuous period.  Not all individuals entering employment will stay in a job indefinitely, and therefore an assessment of the length of employment should be included when calculating the impact of an intervention.  There is an additional economic impact of entering employment, related to increased earnings - this is monetised as £1,222 per annum (2012/13 prices).",https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/214384/WP86.pdf
+EMPLOYMENT & ECONOMY,BENEFITS,E&E3.0.1,"Lone Parent Income Support
+Fiscal benefit from a workless claimant entering work - benefits payments",DWP,HM Treasury,Per claimant per year,7004,2012/13," £7,165 ","Worklessness Co-Design - Interim Report, Annex A (DWP, 2011)",G,See note to headline cost above,https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/214384/WP86.pdf
+EMPLOYMENT & ECONOMY,BENEFITS,E&E3.0.2,"Lone Parent Income Support
+Fiscal benefit from a workless claimant entering work - improved health",NHS,,Per claimant per year,566,2012/13, £579 ,"Worklessness Co-Design - Interim Report, Annex A (DWP, 2011)",G,See note to headline cost above,https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/214384/WP86.pdf
+EMPLOYMENT & ECONOMY,BENEFITS,E&E3.1,"Income Support:
+Cost of processing each new claim for IS",DWP,JCP,Per claim,220,2009/10, £240 ,"DWP Annual Report and Accounts 2010-11, p10",A,"Provisional (lower) costs for 2010-11 also available.  Includes administrative expenditure on pay and staff pension costs, current expenditure on goods and services, and capital depreciation.  Excludes one-off expenditure (cost of investment and other one-off charges).  Direct and apportioned indirect costs are included, such as staff, IT, estates, management and corporate support costs",
+EMPLOYMENT & ECONOMY,BENEFITS,E&E3.2,"Income Support:
+Single - under 25 (or lone parent under 18)",DWP,JCP,Per week,56.25,2012/13, £58 ,Department for Work and Pensions Benefit & Pension Rates 2012 (DirectGov August 2012),G,,
+EMPLOYMENT & ECONOMY,BENEFITS,E&E3.3,"Income Support:
+Single - 25 or over (or lone parent 18 or over)",DWP,JCP,Per week,71,2012/13, £73 ,Department for Work and Pensions Benefit & Pension Rates 2012 (DirectGov August 2012),G,,
+EMPLOYMENT & ECONOMY,BENEFITS,E&E3.4,"Income Support:
+Couple - both under 18",DWP,JCP,Per week,56.25,2012/13, £58 ,Department for Work and Pensions Benefit & Pension Rates 2012 (DirectGov August 2012),G,,
+EMPLOYMENT & ECONOMY,BENEFITS,E&E3.5,"Income Support:
+Couple - both under 18 (higher rate)",DWP,JCP,Per week,84.95,2012/13, £87 ,Department for Work and Pensions Benefit & Pension Rates 2012 (DirectGov August 2012),G,,
+EMPLOYMENT & ECONOMY,BENEFITS,E&E3.6,"Income Support:
+couple - one under 18, one under 25",DWP,JCP,Per week,56.25,2012/13, £58 ,Department for Work and Pensions Benefit & Pension Rates 2012 (DirectGov August 2012),G,,
+EMPLOYMENT & ECONOMY,BENEFITS,E&E3.7,"Income Support:
+Couple - one under 18, one 25 or over",DWP,JCP,Per week,71,2012/13, £73 ,Department for Work and Pensions Benefit & Pension Rates 2012 (DirectGov August 2012),G,,
+EMPLOYMENT & ECONOMY,BENEFITS,E&E3.8,"Income Support:
+Couple - both 18 or over",DWP,JCP,Per week,111.45,2012/13, £114 ,Department for Work and Pensions Benefit & Pension Rates 2012 (DirectGov August 2012),G,,
+EMPLOYMENT & ECONOMY,BENEFITS,E&E3.9,"Income Support:
+Dependent children",DWP,JCP,Per week,64.99,2012/13, £66 ,Department for Work and Pensions Benefit & Pension Rates 2012 (DirectGov August 2012),G,,
+EMPLOYMENT & ECONOMY,BENEFITS,E&E4.0,"Work Programme (HISTORIC)
+Attachment fee (fixed payment)",DWP,JCP,Per customer,400,2010/11, £425 ,"DWP Work Programme Invitation to Tender, Dec. 2010 (Annex A, p.39)",G,Fee is £600 for ESA flow and ESA ex-IB claimants - more detail to go in final database?,
+EMPLOYMENT & ECONOMY,BENEFITS,E&E4.1,"Work Programme (HISTORIC)
+Job outcome fee",DWP,JCP,Per customer,1000,2010/11," £1,062 ","DWP Work Programme Invitation to Tender, Dec. 2010 (Annex A, p.39)",G,"Maximum payment is £1,200 (£3,500 for ESA ex-IB claimants) - more detail to go in final database?",
+EMPLOYMENT & ECONOMY,BENEFITS,E&E4.2,"Work Programme (HISTORIC)
+Maximum sustainment payment",DWP,JCP,Per customer,2210,2010/11," £2,347 ","DWP Work Programme Invitation to Tender, Dec. 2010 (Annex A, p.39)",G,"Maximum payment is £9,620 (markedly different for different groups) - more detail to go in final database?",
+EMPLOYMENT & ECONOMY,BENEFITS,E&E5.0,"Disability Living Allowance
+Cost of processing each new claim for DLA",DWP,JCP,Per claim,263,2009/10, £287 ,"DWP Annual Report and Accounts 2010-11, p10",A,"Provisional (lower) costs for 2010-11 also available.  Includes administrative expenditure on pay and staff pension costs, current expenditure on goods and services, and capital depreciation.  Excludes one-off expenditure (cost of investment and other one-off charges).  Direct and apportioned indirect costs are included, such as staff, IT, estates, management and corporate support costs",
+EMPLOYMENT & ECONOMY,BENEFITS,E&E5.1,"Disability Living Allowance
+Care component: highest",DWP,JCP,Per week,77.45,2012/13, £79 ,Department for Work and Pensions Benefit & Pension Rates 2012 (DirectGov August 2012),G,,
+EMPLOYMENT & ECONOMY,BENEFITS,E&E5.2,"Disability Living Allowance
+Care component: middle",DWP,JCP,Per week,51.85,2012/13, £53 ,Department for Work and Pensions Benefit & Pension Rates 2012 (DirectGov August 2012),G,,
+EMPLOYMENT & ECONOMY,BENEFITS,E&E5.3,"Disability Living Allowance
+Care component: lowest",DWP,JCP,Per week,20.55,2012/13, £21 ,Department for Work and Pensions Benefit & Pension Rates 2012 (DirectGov August 2012),G,,
+EMPLOYMENT & ECONOMY,BENEFITS,E&E5.4,"Disability Living Allowance
+Mobility component: higher",DWP,JCP,Per week,54.05,2012/13, £55 ,Department for Work and Pensions Benefit & Pension Rates 2012 (DirectGov August 2012),G,,
+EMPLOYMENT & ECONOMY,BENEFITS,E&E5.5,"Disability Living Allowance
+Mobility component: lower",DWP,JCP,Per week,20.55,2012/13, £21 ,Department for Work and Pensions Benefit & Pension Rates 2012 (DirectGov August 2012),G,,
+EMPLOYMENT & ECONOMY,UNEMPLOYMENT,E&E6.0,"Not in Employment Education or Training
+Average cost per 18-24 year old not in education, employment or training",Multiple,DWP,Per year,4263,2010/11," £4,528 ","Youth Unemployment: the crisis we cannot afford (ACEVO Commission on Youth Unemployment, 2012)",G,"Analysis of data from the Acevo report (costs not updated), calculation as follows: total cost to exchequer nationally per year £4,744,204,046; 723,380 claimants nationally; = £6,558 per person on benefits.  65% of 18-24 year old NEETs claim benefits, therefore cost per NEET is 65% of cost per person on benefits = £4,263",http://www.cesi.org.uk/sites/default/files/event_downloads/ACEVO_report.pdf
+EMPLOYMENT & ECONOMY,UNEMPLOYMENT,E&E6.1,"Not in Employment Education or Training
+Average cost per 16-17 year old not in education, employment or training",Multiple,DWP,Per year,533,2010/11, £566 ,"Youth Unemployment: the crisis we cannot afford (ACEVO Commission on Youth Unemployment, 2012)",G,"Analysis of data from the Acevo report (costs not updated), calculation as follows: total cost to exchequer nationally per year £77,099,839 (pg88); 27,500 claimants nationally; = £2,804 per person on benefits.  19% of 16-17 year old NEET population claim benefits, therefore average cost per NEET is 19% of cost per person on benefits = £533.  Note that this cost is based on benefits payments, and therefore care should be taken to avoid double-counting when preparing Troubled Families business plans.",http://www.cesi.org.uk/sites/default/files/event_downloads/ACEVO_report.pdf
+EMPLOYMENT & ECONOMY,UNEMPLOYMENT,E&E6.2,"Not in Employment Education or Training
+Lifetime costs - Public finance cost which includes: welfare payment cost £ (- pensions); and lost-contribution £ (NI+ d-tax lost).",Multiple,DWP,Lifetime,64483,2010/11," £68,489 ","Coles et al 2010: Estimating the life-time cost of NEET:
+16-18 year olds not in Education, Employment or Training p37 tab 3.7",G,Presents a calculation of the public finance cost of each of the case studies being NEET. Aggregated the life-time welfare payments of each case with the lost contributions (an estimate of lost tax and National Insurance) because of their unemployment.,
