@@ -1,0 +1,103 @@
+Unit Cost Database API
+
+Base URL: http://unitcost.toastwaffle.com/api/
+
+Endpoints
+
+agency/
+
+    List all agencies
+
+    Parameters:
+     * search - Search term over agency name
+     * level - Agency level
+
+agency/<int:id>
+
+    Get agency with specific ID
+
+agency/<int:id>/children
+
+    Get children of agency with specific ID
+
+agency/<int:id>/entries
+
+    Get entries related to agency with specific ID
+
+category/
+
+    List all categories
+
+    Parameters:
+     * search - Search term over category name
+
+category/<int:id>
+
+    Get category with specific ID
+
+category/<int:id>/subcategories
+
+    Get children of category with specific ID
+
+category/<int:id>/entries
+
+    Get entries related to category with specific ID
+
+subcategory/
+
+    List all subcategories
+
+    Parameters:
+     * search - Search term over subcategory name
+
+subcategory/<int:id>
+
+    Get subcategory with specific ID
+
+subcategory/<int:id>/parents
+
+    Get children of subcategory with specific ID
+
+subcategory/<int:id>/entries
+
+    Get entries related to subcategory with specific ID
+
+unit/
+
+    List all units
+
+    Parameters:
+     * search - Search term over unit name
+
+unit/<int:id>
+
+    Get unit with specific ID
+
+unit/<int:id>/entries
+
+    Get entries related to unit with specific ID
+
+entry/
+
+    List all entries
+
+    Parameters:
+     * search - Search term over entry detail, source, comment
+
+entry/<int:id>
+
+    Get entry with specific ID
+
+gdp/
+
+    Get all GDP info
+
+gdp/year/<int:year>/
+
+    Get GDP info for a specific year
+
+gdp/cumulative/start/<int:startyear>/end/<int:endyear>/
+
+    Get cumulative GDP change between 2 years
+
+    (Use for calculating current cost of old entries)

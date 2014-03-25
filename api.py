@@ -1,6 +1,6 @@
 # coding: utf-8
-from flask import Blueprint, request, Response, url_for
-import json
+from flask import Blueprint, request, Response, url_for, send_file
+import json, os
 from database import *
 from functools import wraps
 
@@ -227,3 +227,10 @@ def gdp(year):
 @return_json
 def gdp_cumulative(startyear, endyear):
     return success([GDP.get_cumulative_modifier(startyear, endyear)])
+
+@api.route('/api/documentation')
+def documentation():
+    return send_file(
+        os.path.join(os.path.dirname(__file__), 'documentation.txt'),
+        'text/plain'
+    )
