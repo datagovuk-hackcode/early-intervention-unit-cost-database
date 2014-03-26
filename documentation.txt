@@ -104,4 +104,16 @@ gdp/cumulative/start/<int:startyear>/end/<int:endyear>/
 
     Get cumulative GDP change between 2 years
 
-    (Use for calculating current cost of old entries)
+    (Use for calculating cost of old entries in a particular year)
+
+gdp/cumulative/start/<int:startyear>/
+
+    Get cumulative GDP change from one particular year to all years
+
+    (Use for calculating cost series of entries from a particular year)
+
+gdp/cumulative/end/<int:endyear>/
+
+    Get cumulative GDP change from all years to one particular year
+
+    (Use for calculating cost of old entries in a particular year)

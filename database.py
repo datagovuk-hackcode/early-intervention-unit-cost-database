@@ -1,11 +1,13 @@
 # coding: utf-8
 from flask.ext.sqlalchemy import SQLAlchemy
 import flask.ext.whooshalchemy as whooshalchemy
-import cdecimal
+import cdecimal, datetime
 
 from app import app
 
 db = SQLAlchemy(app)
+
+cumulative_modifier_lookup = {}
 
 outcome_category_detail_link = db.Table(
     'outcome_category_detail_link',
@@ -223,19 +225,28 @@ class GDP(db.Model):
 
     @staticmethod
     def get_cumulative_modifier(startyear, endyear):
-        start = min(startyear, endyear)
-        end = max(startyear, endyear)
+        try:
+            return cumulative_modifier_lookup[startyear][endyear]
+        except KeyError:
+            start = min(startyear, endyear)
+            end = max(startyear, endyear)
 
-        entries = GDP.query.filter(GDP.year > start).filter(GDP.year <= end).all()
+            entries = GDP.query.filter(GDP.year > start).filter(GDP.year <= end).all()
 
-        total = 1
+            total = 1
 
-        for entry in entries:
-            total = total * entry.decimal_modifier
+            for entry in entries:
+                total = total * entry.decimal_modifier
 
-        if endyear < startyear:
-            return 1 / total
-        else:
+            if endyear < startyear:
+                total = 1 / total
+
+            try:
+                cumulative_modifier_lookup[startyear][endyear] = total
+            except KeyError:
+                cumulative_modifier_lookup[startyear] = {}
+                cumulative_modifier_lookup[startyear][endyear] = total
+
             return total
 
 class Entry(db.Model):
@@ -331,6 +342,22 @@ class Entry(db.Model):
         remote_side=[id]
     )
 
+    def __getattr__(self, name):
+        if name == 'current_cost':
+            return (
+                self.cost *
+                cdecimal.Decimal(
+                    GDP.get_cumulative_modifier(
+                        self.year,
+                        datetime.datetime.now().year
+                    )
+                )
+            )
+        else:
+            raise AttributeError(
+                "Entry instance has no attribute '{0}'".format(name)
+            )
+
     def __repr__(self):
         return '<Entry {0}: {1} - {2}>'.format(
             self.id,
@@ -384,6 +411,7 @@ class Entry(db.Model):
             'source_url': self.source_url,
             'confidence': self.confidence,
             'comment': self.comment,
+            'current_cost': self.current_cost
         }
 
     @staticmethod

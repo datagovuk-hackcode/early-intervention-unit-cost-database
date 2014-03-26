@@ -10,7 +10,7 @@ def get_dict(obj):
     if isinstance(obj, db.Model):
         return obj.toDict()
     elif isinstance(obj, cdecimal.Decimal):
-        return float(obj)
+        return round(float(obj), 2)
     else:
         return obj.__repr__()
 
@@ -227,6 +227,16 @@ def gdp(year):
 @return_json
 def gdp_cumulative(startyear, endyear):
     return success([GDP.get_cumulative_modifier(startyear, endyear)])
+
+@api.route('/api/gdp/cumulative/start/<int:startyear>/')
+@return_json
+def gdp_cumulative_start(startyear):
+    return success([{'year': year, 'modifer': GDP.get_cumulative_modifier(startyear, year)} for year in xrange(1989, 2019)])
+
+@api.route('/api/gdp/cumulative/end/<int:endyear>/')
+@return_json
+def gdp_cumulative_end(endyear):
+    return success([{'year': year, 'modifer': GDP.get_cumulative_modifier(year, endyear)} for year in xrange(1989, 2019)])
 
 @api.route('/api/documentation')
 def documentation():

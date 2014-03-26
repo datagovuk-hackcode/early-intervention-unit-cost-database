@@ -4,7 +4,7 @@ import ucsv
 import os
 import re
 
-r = re.compile(r'\D')
+r = re.compile(r'[^\d\.]')
 
 confidence_map = {
     'R' : 'Low',
