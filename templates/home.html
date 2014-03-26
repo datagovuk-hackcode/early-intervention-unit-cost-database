@@ -1,0 +1,117 @@
+<!-- home.html -->
+{% extends 'layout.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+    <section id="home" class="columns">
+        <section id="search-agencies" class="row">
+            <div class="large-12 columns">
+                <h3>Search Agencies</h3>
+            </div>
+            <form action="{{ url_for('browser.agencies') }}" method="get">
+                <div class="large-4 columns">
+                    <label for="level-1">
+                        <input type="radio" id="level-1" name="level" value="1" {% if request.args['level'] and request.args['level'] == '1' %}checked{% endif %} />
+                        Level 1 Only
+                    </label>
+                </div>
+                <div class="large-4 columns">
+                    <label for="level-2">
+                        <input type="radio" id="level-2" name="level" value="2" {% if request.args['level'] and request.args['level'] == '2' %}checked{% endif %} />
+                        Level 2 Only
+                    </label>
+                </div>
+                <div class="large-4 columns">
+                    <label for="level-any">
+                        <input type="radio" id="level-any" name="level" value="any" {% if (not request.args['level']) or request.args['level'] == 'any' %}checked{% endif %} />
+                        Any Level
+                    </label>
+                </div>
+                <div class="large-12 columns">
+                    <label for="search">Search Term(s)</label>
+                    <div class="row collapse">
+                        <div class="large-10 columns">
+                            <input type="text" name="search" id="search" placeholder="Search Term(s)" {% if request.args['search'] %}value="{{ request.args['search'] }}" {% endif %}/>
+                        </div>
+                        <div class="large-2 columns">
+                            <input type="submit" class="button postfix" value="Go" />
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <section id="search-categories" class="row">
+            <div class="large-12 columns">
+                <h3>Search Categories</h3>
+            </div>
+            <form action="{{ url_for('browser.categories') }}" method="get">
+                <div class="large-12 columns">
+                    <label for="search">Search Term(s)</label>
+                    <div class="row collapse">
+                        <div class="large-10 columns">
+                            <input type="text" name="search" id="search" placeholder="Search Term(s)" {% if request.args['search'] %}value="{{ request.args['search'] }}" {% endif %}/>
+                        </div>
+                        <div class="large-2 columns">
+                            <input type="submit" class="button postfix" value="Go" />
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <section id="search-subcategories" class="row">
+            <div class="large-12 columns">
+                <h3>Search Subcategories</h3>
+            </div>
+            <form action="{{ url_for('browser.subcategories') }}" method="get">
+                <div class="large-12 columns">
+                    <label for="search">Search Term(s)</label>
+                    <div class="row collapse">
+                        <div class="large-10 columns">
+                            <input type="text" name="search" id="search" placeholder="Search Term(s)" {% if request.args['search'] %}value="{{ request.args['search'] }}" {% endif %}/>
+                        </div>
+                        <div class="large-2 columns">
+                            <input type="submit" class="button postfix" value="Go" />
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <section id="search-units" class="row">
+            <div class="large-12 columns">
+                <h3>Search Units</h3>
+            </div>
+            <form action="{{ url_for('browser.units') }}" method="get">
+                <div class="large-12 columns">
+                    <label for="search">Search Term(s)</label>
+                    <div class="row collapse">
+                        <div class="large-10 columns">
+                            <input type="text" name="search" id="search" placeholder="Search Term(s)" {% if request.args['search'] %}value="{{ request.args['search'] }}" {% endif %}/>
+                        </div>
+                        <div class="large-2 columns">
+                            <input type="submit" class="button postfix" value="Go" />
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <section id="search-entries" class="row">
+            <div class="large-12 columns">
+                <h3>Search Entries</h3>
+            </div>
+            <form action="{{ url_for('browser.entries') }}" method="get">
+                <div class="large-12 columns">
+                    <label for="search">Search Term(s)</label>
+                    <div class="row collapse">
+                        <div class="large-10 columns">
+                            <input type="text" name="search" id="search" placeholder="Search Term(s)" {% if request.args['search'] %}value="{{ request.args['search'] }}" {% endif %}/>
+                        </div>
+                        <div class="large-2 columns">
+                            <input type="submit" class="button postfix" value="Go" />
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </section>
+{% endblock %}

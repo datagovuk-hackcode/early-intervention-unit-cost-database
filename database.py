@@ -353,6 +353,8 @@ class Entry(db.Model):
                     )
                 )
             )
+        elif name == 'name':
+            return self.details
         else:
             raise AttributeError(
                 "Entry instance has no attribute '{0}'".format(name)

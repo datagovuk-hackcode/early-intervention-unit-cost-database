@@ -1,0 +1,18 @@
+<!-- entry.html -->
+{% extends 'layout.html' %}
+
+{% block title %}Entry{% endblock %}
+
+{% block content %}
+    <section id="item" class="columns">
+        <p><strong>Name:</strong> {{ entry.details }}</p>
+        <p><strong>Estimated cost in {{ entry.year }}:</strong> {{ entry.cost }}</p>
+        <p><strong>Calculated cost in durrent year:</strong> {{ round(entry.current_cost, 2) }}</p>
+        <p><strong>Category:</strong> <a href="{{ url_for('browser.category', id=entry.outcome_category.id) }}">{{ entry.outcome_category.name }}</a></p>
+        <p><strong>Subcategory:</strong> <a href="{{ url_for('browser.subcategory', id=entry.outcome_detail.id) }}">{{ entry.outcome_detail.name }}</a></p>
+        <p><strong>Level 1 Agency:</strong> <a href="{{ url_for('browser.agency', id=entry.level_1_agency.id) }}">{{ entry.level_1_agency.name }}</a></p>
+        {% if entry.level_2_agency %}
+            <p><strong>Category:</strong> <a href="{{ url_for('browser.agency', id=entry.level_2_agency.id) }}">{{ entry.level_2_agency.name }}</a></p>
+        {% endif %}
+    </section>
+{% endblock %}

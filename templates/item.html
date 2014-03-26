@@ -1,0 +1,32 @@
+<!-- item.html -->
+{% extends 'layout.html' %}
+
+{% block title %}{{ title }} - {{ item.name }}{% endblock %}
+
+{% block content %}
+    <section id="item" class="columns">
+        {% if showlevel %}<p>Level: {{ item.level }}</p>{% endif %}
+        {% if related %}
+            <h3>{{ related_title }}</h3>
+            <ul>
+                {% for child in item.__getattribute__(related) %}
+                    <li>
+                        <a href="{{ url_for(related_url, id=child.id) }}">
+                            {{ child.name }}
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+        <h3>Entries</h3>
+        <ul>
+            {% for entry in item.entries %}
+                <li>
+                    <a href="{{ url_for('browser.entry', id=entry.id) }}">
+                        {{ entry.details }}
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    </section>
+{% endblock %}

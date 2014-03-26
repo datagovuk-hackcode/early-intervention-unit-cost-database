@@ -1,0 +1,25 @@
+<!-- gdp.html -->
+{% extends 'layout.html' %}
+
+{% block title %}GDP Table{% endblock %}
+
+{% block content %}
+    <section id="gdp" class="columns">
+        <table>
+            <thead>
+                <th></th>
+                {% for x in range(1989,2018) %}
+                    <th>{{ x }}</th>
+                {% endfor %}
+            </thead>
+            {% for x in range(1989,2018) %}
+                <tr>
+                    <th>{{ x }}</th>
+                    {% for y in range(1989,2018) %}
+                        <td>{{ table[x][y] }}</td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+        </table>
+    </section>
+{% endblock %}

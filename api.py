@@ -41,7 +41,8 @@ def agencies():
 
     try:
         search = request.args['search']
-        query = query.whoosh_search(search)
+        if search != '':
+            query = query.whoosh_search(search)
     except KeyError:
         pass
 
@@ -87,7 +88,8 @@ def categories():
 
     try:
         search = request.args['search']
-        query = query.whoosh_search(search)
+        if search != '':
+            query = query.whoosh_search(search)
     except KeyError:
         pass
 
@@ -127,7 +129,8 @@ def subcategories():
 
     try:
         search = request.args['search']
-        query = query.whoosh_search(search)
+        if search != '':
+            query = query.whoosh_search(search)
     except KeyError:
         pass
 
@@ -167,7 +170,8 @@ def units():
 
     try:
         search = request.args['search']
-        query = query.whoosh_search(search)
+        if search != '':
+            query = query.whoosh_search(search)
     except KeyError:
         pass
 
@@ -198,7 +202,8 @@ def entries():
 
     try:
         search = request.args['search']
-        query = query.whoosh_search(search)
+        if search != '':
+            query = query.whoosh_search(search)
     except KeyError:
         pass
 

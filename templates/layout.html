@@ -1,0 +1,61 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>{% block title %}{% endblock %} - Unit Cost Database Browser</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/foundation.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/custom.css') }}" />
+        <script src="{{ url_for('static', filename='js/vendor/modernizr.js') }}"></script>
+    </head>
+    <body>
+        <div class="fixed">
+            <nav class="top-bar" data-topbar>
+                <ul class="title-area">
+                    <li class="name">
+                        <h1><a href="{{ url_for('browser.home') }}">Unit Cost Database</a></h1>
+                    </li>
+                    <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+                </ul>
+
+                <section class="top-bar-section">
+                    <!-- Right Nav Section -->
+                    <ul class="right">
+                        <li><a href="{{ url_for('browser.gdp') }}">GDP Table</a></li>
+                        <li class="has-dropdown">
+                            <a>Search/Browse</a>
+                            <ul class="dropdown">
+                                <li><a href="{{ url_for('browser.agencies') }}">Agencies</a></li>
+                                <li><a href="{{ url_for('browser.categories') }}">Categories</a></li>
+                                <li><a href="{{ url_for('browser.subcategories') }}">Subcategories</a></li>
+                                <li><a href="{{ url_for('browser.units') }}">Units</a></li>
+                                <li><a href="{{ url_for('browser.entries') }}">Entries</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <!-- Left Nav Section -->
+                    <ul class="left">
+                        <li class="active"><a href="{{ url_for('api.documentation') }}">API</a></li>
+                    </ul>
+                </section>
+            </nav>
+        </div>
+
+        <div class="row">
+            <div class="large-12 columns">
+                <h1>{{ self.title() }}</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            {% block content %}{% endblock %}
+        </div>
+
+        <script src="{{ url_for('static', filename='js/vendor/jquery.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/foundation.min.js') }}"></script>
+        <script>
+            $(document).foundation();
+        </script>
+    </body>
+</html>
