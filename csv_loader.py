@@ -18,6 +18,8 @@ level_1_agency = Agency(1, "")
 level_2_agency = Agency(2, "")
 unit = Unit("")
 
+entry_list = []
+
 count = 0
 
 for filename in os.listdir('csvs'):
@@ -74,23 +76,38 @@ for filename in os.listdir('csvs'):
                 level_1_agency.children.append(level_2_agency)
                 db.session.commit()
 
-            db.session.add(
-                Entry(
-                    outcome_category,
-                    outcome_detail,
-                    row[2],
-                    row[3],
-                    level_1_agency,
-                    level_2_agency,
-                    unit,
-                    cdecimal.Decimal(re.sub(r,'',row[7])),
-                    int(row[8][0:4]),
-                    row[10],
-                    row[13],
-                    confidence_map[row[11]],
-                    row[12]
-                )
+            parent = None
+
+            while len(entry_list) != 0:
+                if (
+                    row[2].startswith(entry_list[-1].code) and
+                    row[2] != entry_list[-1].code
+                ):
+                    parent = entry_list[-1]
+                    break
+                else:
+                    entry_list.pop()
+
+            entry = Entry(
+                outcome_category,
+                outcome_detail,
+                row[2],
+                row[3],
+                level_1_agency,
+                level_2_agency,
+                unit,
+                cdecimal.Decimal(re.sub(r,'',row[7])),
+                int(row[8][0:4]),
+                row[10],
+                row[13],
+                confidence_map[row[11]],
+                row[12],
+                parent
             )
+
+            db.session.add(entry)
+
+            entry_list.append(entry)
 
             count += 1
 

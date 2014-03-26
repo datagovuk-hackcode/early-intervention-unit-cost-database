@@ -1,3 +1,25 @@
 #gdp {
     overflow-x: scroll;
 }
+
+span.confidence {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-width: 2px;
+    border-style: solid;
+}
+span.confidence.low {
+    background-color: #ffcccc;
+    border-color: #ff0000;
+    color: #ff0000;
+}
+span.confidence.medium {
+    background-color: #ffe1a5;
+    border-color: #ff7000;
+    color: #ff7000;
+}
+span.confidence.high {
+    background-color: #99ff99;
+    border-color: #00cc00;
+    color: #00cc00;
+}

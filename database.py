@@ -381,7 +381,8 @@ class Entry(db.Model):
         source,
         source_url,
         confidence,
-        comment
+        comment,
+        parent
     ):
         self.outcome_category = outcome_category
         self.outcome_detail = outcome_detail
@@ -396,6 +397,7 @@ class Entry(db.Model):
         self.source_url = source_url
         self.confidence = confidence
         self.comment = comment
+        self.parent = parent
 
     def toDict(self):
         return {
@@ -413,7 +415,9 @@ class Entry(db.Model):
             'source_url': self.source_url,
             'confidence': self.confidence,
             'comment': self.comment,
-            'current_cost': self.current_cost
+            'current_cost': self.current_cost,
+            'parent_id': self.parent_id,
+            'children_ids': [child.id for child in self.children]
         }
 
     @staticmethod

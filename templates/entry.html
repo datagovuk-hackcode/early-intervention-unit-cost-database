@@ -5,14 +5,38 @@
 
 {% block content %}
     <section id="item" class="columns">
+        <h3>Details</h3>
         <p><strong>Name:</strong> {{ entry.details }}</p>
-        <p><strong>Estimated cost in {{ entry.year }}:</strong> {{ entry.cost }}</p>
-        <p><strong>Calculated cost in durrent year:</strong> {{ round(entry.current_cost, 2) }}</p>
+        <p><strong>Code:</strong> {{ entry.code }}</p>
+        <p><strong>Estimated cost in {{ entry.year }}:</strong> &pound;{{ entry.cost }} {{ entry.unit.name|lower }}</p>
+        <p><strong>Calculated cost in current year:</strong> &pound;{{ round(entry.current_cost, 2) }} {{ entry.unit.name|lower }}</p>
+        <p><strong>Source:</strong> {% if entry.source_url %}<a href="{{ entry.source_url }}">{{ entry.source }}</a>{% else %}{{ entry.source }}{% endif %}</p>
+        {% if entry.comment and entry.comment != '' %}
+            <p><strong>Comment:</strong> {{ entry.comment }}</p>
+        {% endif %}
+        <p><strong>Confidence Level:</strong> <span class="confidence {{ entry.confidence|lower }}">{{ entry.confidence }}</span></p>
+
+        <h3>Classification</h3>
         <p><strong>Category:</strong> <a href="{{ url_for('browser.category', id=entry.outcome_category.id) }}">{{ entry.outcome_category.name }}</a></p>
         <p><strong>Subcategory:</strong> <a href="{{ url_for('browser.subcategory', id=entry.outcome_detail.id) }}">{{ entry.outcome_detail.name }}</a></p>
         <p><strong>Level 1 Agency:</strong> <a href="{{ url_for('browser.agency', id=entry.level_1_agency.id) }}">{{ entry.level_1_agency.name }}</a></p>
         {% if entry.level_2_agency %}
             <p><strong>Category:</strong> <a href="{{ url_for('browser.agency', id=entry.level_2_agency.id) }}">{{ entry.level_2_agency.name }}</a></p>
+        {% endif %}
+
+        {% if entry.parent or (entry.children.count() > 0) %}
+            <h3>Related Entries</h3>
+            {% if entry.parent %}
+                <p><strong>Parent:</strong> <a href="{{ url_for('browser.entry', id=entry.parent_id) }}">{{ entry.parent.name }}</a></p>
+            {% endif %}
+            {% if entry.children.count() > 0 %}
+                <p><strong>Children:</strong></p>
+                <ul>
+                    {% for child in entry.children %}
+                        <li><a href="{{ url_for('browser.entry', id=child.id) }}">{{ child.name }}</a></li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
         {% endif %}
     </section>
 {% endblock %}
