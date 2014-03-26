@@ -1,4 +1,8 @@
-Unit Cost Database API
+Unit Cost Database - MySQL and API
+
+MySQL Database at mysql://unitcostdatabase:unitcostdatabase@toastwaffle.com/unitcostdatabase
+PHPMyAdmin at http://www.toastwaffle.com/phpmyadmin
+DB Dump and Python SQLAlchemy ORM Classes at http://www.toastwaffle.com/UnitCostDB.tar.gz
 
 Base URL: http://unitcost.toastwaffle.com/api/
 
