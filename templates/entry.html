@@ -21,7 +21,7 @@
         <p><strong>Subcategory:</strong> <a href="{{ url_for('browser.subcategory', id=entry.outcome_detail.id) }}">{{ entry.outcome_detail.name }}</a></p>
         <p><strong>Level 1 Agency:</strong> <a href="{{ url_for('browser.agency', id=entry.level_1_agency.id) }}">{{ entry.level_1_agency.name }}</a></p>
         {% if entry.level_2_agency %}
-            <p><strong>Category:</strong> <a href="{{ url_for('browser.agency', id=entry.level_2_agency.id) }}">{{ entry.level_2_agency.name }}</a></p>
+            <p><strong>Level 2 Agency:</strong> <a href="{{ url_for('browser.agency', id=entry.level_2_agency.id) }}">{{ entry.level_2_agency.name }}</a></p>
         {% endif %}
 
         {% if entry.parent or (entry.children.count() > 0) %}
