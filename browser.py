@@ -115,7 +115,7 @@ def subcategories():
 
 @browser.route('/browser/subcategory/<int:id>')
 def subcategory(id):
-    c = OutcomeCategory.get_by_id(id)
+    c = OutcomeDetail.get_by_id(id)
     if c is not None:
         return render_template(
             'item.html',

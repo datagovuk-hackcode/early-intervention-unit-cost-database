@@ -139,7 +139,7 @@ def subcategories():
 @api.route('/api/subcategory/<int:id>')
 @return_json
 def subcategory(id):
-    c = OutcomeCategory.get_by_id(id)
+    c = OutcomeDetail.get_by_id(id)
     if c is not None:
         return success([c])
     else:
@@ -148,7 +148,7 @@ def subcategory(id):
 @api.route('/api/subcategory/<int:id>/parents')
 @return_json
 def subcategory_children(id):
-    c = OutcomeCategory.get_by_id(id)
+    c = OutcomeDetail.get_by_id(id)
     if c is not None:
         return success(c.categories.all())
     else:
