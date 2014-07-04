@@ -4,10 +4,9 @@ The Cabinet Office Unit Cost Database parsed and loaded into a MySQL database, w
 
 ## Live Version
 
-Browser running at (http://unitcost.toastwaffle.com/browser/)[http://unitcost.toastwaffle.com/browser/]
+Browser running at [http://unitcost.toastwaffle.com/browser/](http://unitcost.toastwaffle.com/browser/)
 
-API documentation at 
-(http://unitcost.toastwaffle.com/api/documentation)[http://unitcost.toastwaffle.com/api/documentation]
+API documentation at [http://unitcost.toastwaffle.com/api/documentation](http://unitcost.toastwaffle.com/api/documentation)
 
 ## Data Sources
 
